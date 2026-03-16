@@ -13,6 +13,7 @@
     <img src="https://img.shields.io/badge/TypeScript-5-111111?style=flat-square" alt="TypeScript 5" />
     <img src="https://img.shields.io/badge/shadcn-ui-111111?style=flat-square" alt="shadcn ui" />
     <img src="https://img.shields.io/badge/Codex-native_bridge-111111?style=flat-square" alt="Codex native bridge" />
+    <img src="https://img.shields.io/badge/license-MIT-111111?style=flat-square" alt="MIT License" />
   </p>
 </div>
 

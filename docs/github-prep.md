@@ -6,7 +6,7 @@
 - visibility: `public`
 - about: `Chromium MV3 extension for quiet one-shot AI workflows across Kimi, OpenRouter, Z.ai, custom OpenAI-compatible endpoints, and Codex CLI.`
 - homepage: leave empty for now
-- social preview image: `assets/readme/options.png`
+- social preview image: `assets/readme/social-preview.png`
 
 ## suggested topics
 
@@ -79,8 +79,8 @@ After the first commit:
 git push -u origin main
 ```
 
-## open decisions
+## notes
 
-- License file is still not added. If you want parity with many of your public repos, `MIT` is the obvious candidate, but I did not create it without explicit direction.
-- If you want a cleaner GitHub social preview, replace `assets/readme/options.png` with a dedicated 1280x640 social card later.
-
+- `MIT` is now added in [LICENSE](../LICENSE).
+- A dedicated social preview asset now lives at `assets/readme/social-preview.png`.
+- GitHub custom social preview upload is usually still a web UI step even after the asset exists locally.
