@@ -1,11 +1,9 @@
 <div align="center">
   <img src="public/logo-mark.png" alt="Onairo logo" width="84" height="84" />
 
-  <h1>Onairo</h1>
+  <h1>onairo</h1>
 
-  <p><strong>Quiet browser relay for one-shot AI workflows</strong></p>
-
-  <p>Capture · Route · Answer · Copy · Type · Overlay</p>
+  <p><strong>quiet browser relay for one-shot AI workflows</strong></p>
 
   <p>
     <img src="https://img.shields.io/badge/Chromium-MV3-111111?style=flat-square" alt="Chromium MV3" />
@@ -18,7 +16,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/readme/popup-dropdown.png" alt="Onairo popup" width="360" />
+  <img src="https://github.com/user-attachments/assets/ac8b7a2d-b386-4795-ab3f-070028c3eafa" alt="Onairo popup" width="1060" />
 </p>
 
 ## overview
