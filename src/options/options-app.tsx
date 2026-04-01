@@ -84,15 +84,16 @@ export function OptionsApp() {
   const [promptEditorKey, setPromptEditorKey] = useState<keyof Prompts>("inputSelectedText")
   const logoUrl = chrome.runtime.getURL("logo-mark.png")
 
-  useEffect(() => {
-    void load()
-  }, [])
-
   async function load(): Promise<void> {
     const snapshot = await getSettingsSnapshot()
     setSync(snapshot.sync)
     setLocal(snapshot.local)
   }
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    void load()
+  }, [])
 
   async function save(): Promise<void> {
     await applySettingsSnapshot({ sync, local })

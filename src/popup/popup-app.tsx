@@ -31,10 +31,6 @@ export function PopupApp() {
   const [followUp, setFollowUp] = useState("")
   const logoUrl = chrome.runtime.getURL("logo-mark.png")
 
-  useEffect(() => {
-    void refresh()
-  }, [])
-
   async function refresh(): Promise<void> {
     const response = await chrome.runtime.sendMessage({
       type: "onairo-popup-action",
@@ -49,6 +45,11 @@ export function PopupApp() {
       lastRun: response.lastRun,
     })
   }
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    void refresh()
+  }, [])
 
   async function dispatchTabAction(tabAction: PageAction): Promise<void> {
     const response = await chrome.runtime.sendMessage({
