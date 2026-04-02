@@ -128,7 +128,7 @@ export function postProcessOutput(
   return output
 }
 
-export function stripMarkdownAndFiller(value: string): string {
+function stripMarkdownAndFiller(value: string): string {
   let output = String(value || "")
   output = output.replace(/^```(?:json)?\s*|\s*```$/gim, "").trim()
   output = output.replace(/^\s*[*_#>\-]+/gm, "").trim()

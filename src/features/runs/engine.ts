@@ -163,7 +163,7 @@ export async function getLastRunOutput(): Promise<LastRunRecord | null> {
   return getLastRun()
 }
 
-export async function clearLastRunOutput(): Promise<void> {
+async function clearLastRunOutput(): Promise<void> {
   await clearLastRun()
 }
 
