@@ -10,7 +10,6 @@ import {
   postProcessOutput,
 } from "@/features/runs/prompting"
 import {
-  clearLastRun,
   getLastRun,
   getSettingsSnapshot,
   setLastRun,
@@ -163,9 +162,7 @@ export async function getLastRunOutput(): Promise<LastRunRecord | null> {
   return getLastRun()
 }
 
-export async function clearLastRunOutput(): Promise<void> {
-  await clearLastRun()
-}
+
 
 function deriveEffectiveProfile(profile: RunProfile, text: string): EffectiveRunProfile {
   if (profile.mode !== "auto") {
