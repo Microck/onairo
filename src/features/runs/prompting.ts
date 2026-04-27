@@ -131,9 +131,9 @@ export function postProcessOutput(
 export function stripMarkdownAndFiller(value: string): string {
   let output = String(value || "")
   output = output.replace(/^```(?:json)?\s*|\s*```$/gim, "").trim()
-  output = output.replace(/^\s*[*_#>\-]+/gm, "").trim()
-  output = output.replace(/^answer\s*[:\-]\s*/i, "")
-  output = output.replace(/^respuesta\s*[:\-]\s*/i, "")
+  output = output.replace(/^\s*[*_#>-]+/gm, "").trim()
+  output = output.replace(/^answer\s*[:-]\s*/i, "")
+  output = output.replace(/^respuesta\s*[:-]\s*/i, "")
   output = output.replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim()
   return output
 }
